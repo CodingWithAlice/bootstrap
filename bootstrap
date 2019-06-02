@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="//fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <style>
+        h2 {
+            font-family: Lobster, Monospace;
+        }
+
+        .thick-green-border {
+            border-color: green;
+            border-width: 10px;
+            border-style: solid;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-8">
+                <h2 class="text-primary text-center">CatPhotoApp</h2>
+            </div>
+            <div class="col-xs-4">
+                <a href="#"><img class="img-responsive thick-green-border"
+                        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560060248&di=25dfe41d441d8413e24bb9f2e5f56db3&imgtype=jpg&er=1&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201410%2F13%2F20141013211826_ZaJUM.thumb.100_100_c.jpeg"></a>
+            </div>
+        </div>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559465493546&di=172640c5344e42f15637b790b0bc9956&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20160801%2F5bcc158fd94c4a9b90aa202e42cfae87_th.jpg"
+            class="img-responsive">
+        <div class="row">
+            <div class="col-xs-4">
+                <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+            </div>
+            <div class="col-xs-4">
+                <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
+            </div>
+            <div class="col-xs-4">
+                <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
+            </div>
+        </div>
+        <p>Things cats <span class="text-danger">love:</span></p>
+        <ul>
+            <li>cat nip</li>
+            <li>laser pointers</li>
+            <li>lasagna</li>
+        </ul>
+        <p>Top 3 things cats hate:</p>
+        <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+        </ol>
+        <form action="/submit-cat-photo">
+            <div class="row">
+                <div class="col-xs-6">
+                    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+                </div>
+                <div class="col-xs-6">
+                    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <label><input type="checkbox" name="personality"> Loving</label>
+                </div>
+                <div class="col-xs-4">
+                    <label><input type="checkbox" name="personality"> Lazy</label>
+                </div>
+                <div class="col-xs-4">
+                    <label><input type="checkbox" name="personality"> Crazy</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-7">
+                    <input type="text" class="form-control" placeholder="cat photo URL" required>
+                </div>
+                <div class="col-xs-5">
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
